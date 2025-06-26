@@ -251,7 +251,7 @@ class MafiaModel(Model):
                 agent.knowledge['teammates'] = [m for m in self.mafia_members if m != agent.unique_id]
         
         self.log_event("Game starting! Roles have been assigned.")
-        self.game_phase = "Night"
+        self.game_phase = "Day"
 
     def _determine_roles(self, n):
         """Determine the number of each role based on player count."""
